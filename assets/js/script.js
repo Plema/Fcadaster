@@ -129,27 +129,7 @@ $(document).ready(function(){
     }
   });
 
-  function myFunction() {
-    if($(window).width() < 1024)
-    {
-      $( ".sub" ).click(function(event) {
-        $(this).toggleClass('active');
-        $(".sub").not(this).removeClass('active');
-      });
-    }
-    else
-    {
-      
-    }
-  }
 
-//вызываем
-  myFunction();
-
-//ну и при ресайзе перепроверяем
-  $(window).resize(function() {
-    myFunction();
-  });
 });
 
 
